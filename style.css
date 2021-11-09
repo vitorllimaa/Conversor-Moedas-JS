@@ -1,0 +1,89 @@
+* {
+    font-family: 'Red Hat Mono', monospace;
+}
+
+*:focus, *:active, *:hover {
+    outline: none;
+}
+
+.currency-image, .calculation {
+    margin: auto;
+    width: 30em;
+    text-align: center;
+}
+
+.currency-image img {
+    height: 250px;
+    width: 250px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section > select {
+    padding: 2px;
+}
+
+section > select, .currency-number > input {
+    width: 35%;
+    height: 27px;
+    border-radius: 3px;
+    border: solid 2px rgba(94, 85, 90, 0.2);
+    background-color: #ffffff;
+}
+
+select:hover, input:hover, select:focus, input:focus {
+    border-color: #41c7e159;
+}
+
+.currency-number {
+    margin-top: 10px;
+}
+
+.currency-number > input {
+    text-align: center;
+}
+
+.currency-number > p {
+    margin: 10px;
+    display: inline;
+}
+
+.currency-number > div > p {
+    margin: 15px 0;
+}
+
+.message-error {
+    margin: 10px;
+    padding: 5px;
+    border: solid 1px #f5c6cb;
+    border-radius: 3px;
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+}
+
+.message-error-show { 
+    transition: all .3s cubic-bezier(0.4, 0, 1, 1);
+    opacity: 0;
+    font-weight: bold;
+  }
+
+.btn-close {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    margin: 10px;
+    border: none;
+    color: #721c24;
+    font-size: 20px;
+    background-color: #f8d7da;
+}
+
+.btn-close:hover {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+

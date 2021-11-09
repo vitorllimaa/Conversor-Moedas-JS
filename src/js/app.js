@@ -1,5 +1,3 @@
-import {url} from './url';
-
 const currencyOneEl = document.querySelector('[data-js="currency-one"]');
 const currencyTwoEl = document.querySelector('[data-js="currency-two"]');
 const currencyValueEl = document.querySelector('[data-js="converted-value"]');
@@ -107,7 +105,7 @@ const fetchExchangeRate = async url => {
 /* Método de ponto de partida */
 
 const init = async () => {
-    console.log(url);
+    
     internalExchangeRate = {... (await fetchExchangeRate(getUrl('USD')))};
 
     if(internalExchangeRate.conversion_rates) {
